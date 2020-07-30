@@ -11,7 +11,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float horizontalInput;
     [SerializeField] private float verticalInput;
-
+    [SerializeField] private float driftSpeed;
+    
+    
     private void Start()
     {
         
@@ -19,11 +21,16 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
-        
+        horizontalInput = Input.GetAxis(axisName: "Horizontal");
+        verticalInput = Input.GetAxis(axisName: "Vertical");
+
         // The vehicle will move
-        transform.Translate(Vector3.forward * (Time.deltaTime * speedOffset * verticalInput));
-        transform.Translate(Vector3.right * (Time.deltaTime * turnSpeed * horizontalInput));
+        transform.Translate(translation: Vector3.forward * (Time.deltaTime * speedOffset * verticalInput));
+        transform.Rotate(eulers: Vector3.up * (Time.deltaTime * turnSpeed * horizontalInput));
+
+        if (Input.GetKey(key: KeyCode.LeftShift) && Math.Abs(value: verticalInput) > 0)
+        {
+            transform.Rotate(Vector3.up * (Time.deltaTime * driftSpeed * horizontalInput));
+        }
     }
 }

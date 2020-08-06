@@ -2,8 +2,8 @@
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-    [SerializeField] private float topLimitBoundary;
-    [SerializeField] private float lowLimitBoundary;
+    [SerializeField] private float topLimitBoundary = 30;
+    [SerializeField] private float lowLimitBoundary = -10;
     
     // Update is called once per frame
     void Update()

@@ -1,0 +1,2 @@
+/Users/melihsafacelik/Projects/Unity/Create With Code-Unity/Prototype 2/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/Users/melihsafacelik/Projects/Unity/Create With Code-Unity/Prototype 2/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache

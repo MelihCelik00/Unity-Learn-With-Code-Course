@@ -14,6 +14,7 @@ public class DestroyOutOfBounds : MonoBehaviour
         }
         else if (transform.position.z < lowLimitBoundary )
         {
+            Debug.Log("Game Over!");
             Destroy(gameObject);
         }
     }

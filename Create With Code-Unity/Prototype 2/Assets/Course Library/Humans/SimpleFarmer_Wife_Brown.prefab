@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400000}
   - component: {fileID: 9500000}
+  - component: {fileID: 1045771678}
   m_Layer: 0
   m_Name: SimpleFarmer_Wife_Brown
   m_TagString: Untagged
@@ -55,6 +56,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1045771678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55d40db9b0884c44834b14e255d2525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalInput: 0
+  speed: 20
+  xRange: 20
+  projectilePrefab: {fileID: 5619140257584649988, guid: d11078cbf9b0141399943bbc084fe91a,
+    type: 3}
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0
